@@ -1,7 +1,6 @@
 import React from 'react';
 import './Single.css'
 const SingleCategory = ({ singleCategory }) => {
-  console.log(singleCategory);
   const { icon, category, job } = singleCategory;
   return (
     <div className="bg_category p-7 rounded-xl text-center space-y-2 lg:text-left">
