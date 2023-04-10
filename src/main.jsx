@@ -8,6 +8,7 @@ import Statistics from './Components/Statistics/Statistics';
 import Jobs from './Components/Jobs/Jobs';
 import Blogs from './Components/Blogs/Blogs';
 import Home from './Components/Home/Home';
+import CardInfo from './CardInfo/CardInfo';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch('Jobs.json')
+        loader: () => fetch('/Jobs.json')
       },
       {
         path: "/statistics",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       }, {
         path: '/blogs',
         element: <Blogs/>
+      }, {
+        path: '/card/:jobId',
+        element: <CardInfo />,
+        loader: ({params}) => fetch("/Jobs.json")
       }
     ],
   },
