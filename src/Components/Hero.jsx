@@ -1,7 +1,7 @@
 import React from 'react';
-import Hero from '../assets/hero-image.png'
+import Img from '../assets/hero-image.png'
 
-const Home = () => {
+const Hero = () => {
     return (
       <div className="flex flex-col items-center justify-between my_container lg:flex-row">
         {/* Text  */}
@@ -20,10 +20,10 @@ const Home = () => {
         </div>
         {/* Hero img */}
         <div className='px-6 lg:px-0'>
-          <img src={Hero} alt="" className="w-4/5 block" />
+          <img src={Img} alt="" className="w-4/5 block" />
         </div>
       </div>
     );
 };
 
-export default Home;
+export default Hero;
