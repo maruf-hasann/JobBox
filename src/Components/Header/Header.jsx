@@ -53,7 +53,7 @@ const Header = () => {
           </li>
         </ul>
         <div>
-          <button className="px-4 bg-blue-400 font-semibold text-white py-2 rounded-lg">
+          <button className="btn">
             Star Applying
           </button>
         </div>
