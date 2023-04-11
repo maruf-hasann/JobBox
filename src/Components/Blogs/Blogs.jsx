@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-      <div className="my_container">
+      <div className="my_container space-y-4 text-center lg:text-left">
         <div>
           <h3 className="font-bold text-2xl">
             When should you use context API?
