@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import {PhoneIcon,MapPinIcon,EnvelopeIcon,CurrencyDollarIcon, CalendarDaysIcon  } from "@heroicons/react/24/solid";
+import { addToDb } from '../utilities/Fakedb';
 const CardInfo = () => {
     const [data, setData] = useState({})
     let { jobId } = useParams();
@@ -21,11 +22,7 @@ const CardInfo = () => {
    data;
 
   const handleApplyJob = (id) => {
-    const newJob = [...id]
-    console.log(newJob);
-    
-  
-
+    addToDb(id)
   }
   
     
