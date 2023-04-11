@@ -2,10 +2,11 @@ import React from "react";
 import { MapPinIcon,CurrencyDollarIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 const ShowJob = ({job}) => {
-  console.log(job);
+  
   const { logo, title, company, types, location, salary,id } = job;
   return (
     <div className="my_container ">
+     
       <div className="lg:flex items-center justify-between border rounded-lg p-6">
         <div className="lg:flex items-center">
           <div className="w-3/1 ">
@@ -15,8 +16,8 @@ const ShowJob = ({job}) => {
             <h3 className="font-bold text-2xl">{title}</h3>
             <h3 className="font-semibold">{company}</h3>
             <div>
-              {types.map((type) => (
-                <span className="border  p-2 font-bold my-4 inline-block mr-3">
+              {types.map((type,i) => (
+                <span className="border  p-2 font-bold my-4 inline-block mr-3" key={i}>
                   {type}
                 </span>
               ))}

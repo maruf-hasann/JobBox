@@ -59,9 +59,38 @@
     "Experiences" : "3 Years in this field.",
     "Phone" : "01750-00 00 00",
     "email" : " info@gmail.com"
+  }, {
+    "id": 5,
+    "logo": "img/ph_logo.svg",
+    "title":"Technical Database Engineer",
+    "company": "Programming Hero",
+    "types" :["Remote","Full Time"],
+    "location" : "Dhaka,Bangladesh",
+    "salary" : "100k - 150K",
+     "desc" : " Database Engineers administer, test, and implement computer databases, applying knowledge of database management systems. Coordinate changes to computer databases. Identify, investigate, and resolve database performance issues, database capacity, and database scalability.",
+    "responsibility" : "Administer and maintain database security, integrity, and optimization,Develop and run periodic and requested reports",
+    "requirements" : "Bachelor degree to complete any reputational university.",
+    "Experiences" : "3 Years in this field.",
+    "Phone" : "01750-00 00 00",
+    "email" : " info@gmail.com"
+  },
+  {
+    "id": 6,
+    "logo": "img/pngegg.png",
+    "title":"Technical Database Engineer",
+    "company": "Facebook",
+    "types" :["Remote","Full Time"],
+    "location" : "Dhaka,Bangladesh",
+    "salary" : "100k - 150K",
+     "desc" : " Database Engineers administer, test, and implement computer databases, applying knowledge of database management systems. Coordinate changes to computer databases. Identify, investigate, and resolve database performance issues, database capacity, and database scalability.",
+    "responsibility" : "Administer and maintain database security, integrity, and optimization,Develop and run periodic and requested reports",
+    "requirements" : "Bachelor degree to complete any reputational university.",
+    "Experiences" : "3 Years in this field.",
+    "Phone" : "01750-00 00 00",
+    "email" : " info@gmail.com"
   }
-
-   
-  
-  
+ 
+ 
 ]
+  
+  

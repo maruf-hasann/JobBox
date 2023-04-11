@@ -17,16 +17,37 @@ const Jobs = () => {
             newArr.push(jobFind)
              setJobs(newArr);
         }
-     
-        
+      
     }, [])
-    console.log(jobs);
+    const remote = () => {
+         const arr = []
+         const findRemote = jobs.find(data => data.types[0] === 'Remote');
+        arr.push(findRemote);
+        setJobs(arr)
+        console.log(jobs);
+    };
+    const onsite = () => {
+         const arr = []
+         const findRemote = jobs.find(data => data.types[1] === 'Onsite');
+        arr.push(findRemote);
+        setJobs(arr)
+        console.log(jobs);
+     };
+   
     return (
-        <div>
-            {
-                jobs.map(job => <ShowJob key={job.id} job={job} />)
-            }
+      <div>
+        <div className="text-right container mt-16">
+          <button className="btn mr-4" onClick={() => remote()}>
+            Remote
+          </button>
+                <button className="btn" onClick={() => onsite()}>Onsite</button>
         </div>
+        <div>
+          {jobs.map((job) => (
+            <ShowJob key={job.id} job={job} />
+          ))}
+        </div>
+      </div>
     );
 };
 
