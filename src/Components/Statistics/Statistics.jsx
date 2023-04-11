@@ -39,8 +39,8 @@ export const data = {
 };
 const Statistics = () => {
     return (
-      <div className="my_container w-3/6 mt-5">
-        <h1 className='text-center text-2xl font-bold mb-4 lg:text-4xl'>Assignment Mark</h1>
+      <div className="my_container lg:w-3/6 mt-5">
+        
         <PolarArea data={data}  />;
       </div>
     );
