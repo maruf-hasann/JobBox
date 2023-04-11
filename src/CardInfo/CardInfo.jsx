@@ -15,10 +15,18 @@ const CardInfo = () => {
 
         }
      },[jobId])
-    console.log(data);
- const {Phone,email,location, desc, responsibility, requirements, Experiences, salary, title } =
+
+  
+ const {id,Phone,email,location, desc, responsibility, requirements, Experiences, salary, title } =
    data;
 
+  const handleApplyJob = (id) => {
+    const newJob = [...id]
+    console.log(newJob);
+    
+  
+
+  }
   
     
     return (
@@ -53,7 +61,7 @@ const CardInfo = () => {
               </h3>
               <h3 className="inline-flex">
                 <CalendarDaysIcon className="h-6 w-6 text-blue-500 mr-2" />
-                Job Title: {title} (Per Month)
+                Job Title: {title}
               </h3>
             </div>
             <hr className="border-blue-400"></hr>
@@ -72,7 +80,7 @@ const CardInfo = () => {
                 Location : {location}
               </h3>
             </div>
-            <button className="btn">Apply Now</button>
+            <button className="btn" onClick={() => handleApplyJob(id)} >Apply Now</button>
           </div>
         </div>
       </div>

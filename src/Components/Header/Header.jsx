@@ -52,7 +52,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div>
+        <div className="hidden lg:block">
           <button className="btn">
             Star Applying
           </button>
