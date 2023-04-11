@@ -28,10 +28,10 @@ const Jobs = () => {
     };
     const onsite = () => {
          const arr = []
-         const findRemote = jobs.find(data => data.types[1] === 'Onsite');
+         const findRemote = jobs.find(data => data.types[0] === 'Onsite');
         arr.push(findRemote);
         setJobs(arr)
-        console.log(jobs);
+        
      };
    
     return (
@@ -43,8 +43,8 @@ const Jobs = () => {
                 <button className="btn" onClick={() => onsite()}>Onsite</button>
         </div>
         <div>
-          {jobs.map((job) => (
-            <ShowJob key={job.id} job={job} />
+          {jobs.map((job,i) => (
+            <ShowJob key={i} job={job} />
           ))}
         </div>
       </div>

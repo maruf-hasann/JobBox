@@ -3,7 +3,7 @@ import { MapPinIcon,CurrencyDollarIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 const ShowJob = ({job}) => {
   
-  const { logo, title, company, types, location, salary,id } = job;
+  const {logo, title, company, types, location, salary,id } = job;
   return (
     <div className="my_container ">
      
